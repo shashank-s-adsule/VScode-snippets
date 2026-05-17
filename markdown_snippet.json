@@ -1,0 +1,106 @@
+{
+// ---------------------------------------------| ipynb markdown |--------------------------------------------------------
+	"ipynb heading markdown": {
+		"prefix": "heading_ipynb",
+		"body": [
+		  "<h3 style=\"color:orange\">${0:Hyperparameters}</h3>"
+		],
+		"description": "ipynb heading markdown"
+	  },
+	"ipynb heading markdown2": {
+		"prefix": "heading_ipynb2",
+		"body": [
+		  "<h5 style=\"color:cyan\">${0:Hyperparameters}</h5>"
+		],
+		"description": "ipynb heading markdown"
+	  },
+// ---------------------------------------------| tables |------------------------------------------------------------------
+	"html_table": {
+	  	"prefix": "table_html",
+ 		"body": [
+    		"<table>",
+    		"  <tr>",
+    		"    <th>head1</th>",
+    		"    <th>head2</th>",
+    		"  </tr>",
+    		"  <tr>",
+    		"    <td>sub-part1</td>",
+    		"    <td>sub-part2</td>",
+    		"  </tr>",
+    		"</table>"
+  		],
+  		"description": "html_table"
+	},
+
+	"markdown table": {
+  "prefix": "table",
+  "body": [
+    "|${1:COL1}|${2:COL2}|${3:COL3}|",
+    "|:-:|:-:|:-:|",
+    "|TEXT|TEXT|TEXT|"
+  ]},
+
+//-----------------------------------------|Maths|-----------------------------------------------
+"bmatrix for markdown ": {
+  "prefix": "bmatrix",
+  "body": [
+    "${0:\\begin{bmatrix\\} 0 \\end{bmatrix\\}}"
+  ],
+  "description": "bmatrix for markdown "
+},
+"Cases for markdown": {
+  "prefix": "lcases",
+  "body": [
+    "${0:\\begin{cases\\} 1& \\text{if \\}\\; x>0 \\\\\\ \n0& Otherwise\\end{cases\\}}"
+  ],
+  "description": "Latex Cases for markdown"
+},
+"sum for markdown": {
+  "prefix": "sumM",
+  "body": [
+    "${0:\\sum\\limits_{i=1\\}^n}"
+  ],
+  "description": "latex sum for markdown"
+},
+"Variable sequence": {
+  "prefix": "var_seq",
+  "body": [
+    "${0:\\{x_1,\\dots,x_n\\\\\\}}"
+  ],
+  "description": "latex sum for markdown"
+},
+"Text Color": {
+  "prefix": "text_color",
+  "body": [
+    "${0:\\textcolor{orange\\}{\\text{\\}\\}}"
+  ],
+  "description": "color text in markdown latex"
+},
+
+"underbrace for markdown latex": {
+  "prefix": "undertext",
+  "body": [
+    "${0:\\underbrace{Text\\}_{\\text{UNDERLINE\\}\\}}"
+  ],
+  "description": "underbrace for markdown latex"
+},
+
+// ---------------------------------------| Graphs (mermaid)|----------------------------------------------
+"mermaid graph top down ": {
+  "prefix": "Binary_tree_markdown",
+  "body": [
+    "```mermaid",
+    "graph TD\n",
+    "A((A))",
+    "A --> B((B))",
+    "A --> C((C))\n",
+    "B --> D((D))",
+    "B --> E((E))",
+    "C --> F((F))",
+    "C --> G((G))",
+    "```"
+  ],
+  "description": "mermaid graph top down "
+}
+
+}

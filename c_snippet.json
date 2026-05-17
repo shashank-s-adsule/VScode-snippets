@@ -1,0 +1,12 @@
+{
+	"basic C snippet": {
+		"prefix": "basic_C",
+		"body": [
+		  "#include <stdio.h>\n#include <stdlib.h>",
+		  "#include <string.h>",
+		  "#include <conio.h>\n",
+		  "int main(int argc, char* argv[]){\n\t${0://code here}\n\treturn 0;\n}"
+		],
+		"description": "basic C snippet"
+	  }
+}

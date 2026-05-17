@@ -1,0 +1,9 @@
+{
+	"ansi byte code color formater": {
+		"prefix": "ANSI_COLOR",
+		"body": [
+			"f\"\\u001b[33m${0:TEXT}\\u001b[0m\""
+		],
+		"description": "ansi byte code color formater \n [⬛: 30\n🟥:31\n🟩:32\n🟨:33\n🟦:34\n🟪:35\n🩵:36\n⬜:37]"
+}
+}

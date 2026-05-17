@@ -1,0 +1,100 @@
+{
+	"ipynb": {
+		"prefix": "ipynb",
+		"body": [
+		  "import sys,os",
+		  "import pandas as pd \t#for CSV or large data files",
+		  "import numpy as np",
+		  "from tqdm import tqdm ",
+		  "import matplotlib.pyplot as plt, seaborn as sns\t#for ploting or visual representation of data",
+		],
+		"description": "boilerplate for python"
+	  },
+	  "ipynb for DL,ML,DS": {
+		"prefix": "ipynb_NN",
+		"body": [
+		  "import sys,os",
+		  "import pandas as pd",
+		  "import numpy as np",
+		  "import cv2",
+		  "import glob2 ",
+		  "import matplotlib.pyplot as plt",
+		  "import torch, torch.nn as nn",
+		  "import torchvision",
+		  "from torchvision import models, transforms, datasets"
+		],
+		"description": "boilerplate for python with torch, opencv "
+	},
+	"python snippet": {
+		"prefix": "py_basic",
+		"body": [
+		  "import os, sys, time, traceback",
+		  "import numpy as np",
+		  "import pandas as pd",
+		  "import matplotlib.pyplot as plt\n",
+		  "import logging\t# <need to run in terminal using script(.py)> comment if using in normal IDE or .ipynb\n",
+		  "LOG=True\t\t#set False to disable logging",
+		  "def set_log():",
+		  "\tif not os.path.exists(\"./logs\"): os.makedirs(\"./logs\")",
+		  "\tlogging.basicConfig(filemode=\"w\",filename=f\"./logs/{os.path.basename(__file__)[:-3]}_logs.log\",level=logging.DEBUG,format=\"%(asctime)s [%(levelname)s]:\\t %(message)s\",datefmt=\"%d/%m/%Y %H:%M:%S\")",
+		  "\tlogging.info(\"<process begin>\")        ",
+		  "\treturn time.time()\n\n",
+		  "if __name__==\"__main__\":",
+		  "\ttry:",
+		  "\t\tif(LOG): start_time=set_log()",
+		  "\t\t${0:#code here}\n",
+		  "\texcept Exception as e:",
+		  "\t\tif (LOG): logging.error(e)",
+		  "\t\ttraceback.print_exc()",
+		  "\tfinally:",
+		  "\t\tif(LOG): logging.info(f\"<process end> [time taken:{time.time()-start_time}]\")",
+		  "\t\tprint(f\"\\u001b[1;33m{'End of Execution':-^75}\\u001b[0m\")"
+		],
+		"description": "python snippet"
+	},
+	  "tkinter class snippet": {
+	    "prefix": "tkpy_class",
+	    "body": [
+	      "import tkinter as tk\n",
+	      "class ${TM_FILENAME_BASE}:",
+	      "\t'''Simple Tkinter class for creating an applciation\\n\\nparms:\\n\\n\\tWINODW: tk.Tk() [default, no need to edit]\\n\\nMethods:\\n\\n\\tdisplay(): Display Window'''",
+	      "\tdef __init__(self,WINDOW=tk.Tk()):",
+	      "\t\tWINDOW.title(\"${TM_FILENAME_BASE}\")\t\t\t#Window Name",
+	      "\t\tWINDOW.config(bg=\"#323232\")\t\t#Window Background Color",
+	      "\t\tself.window=WINDOW\t\t\t\t#main window\n",
+	      "\tdef display(self):\n\t\t",
+	      "\t\tself.window.mainloop()\t\t\t# Runs Window"
+	    ],
+	    "description": "tkinter class snippet"
+	  },
+	  "py text sepeator": {
+		"prefix": "text_head",
+		"body": [
+		  "'''----------------------------------------| ${0:HEAD_TEXT} |----------------------------------------'''"
+		],
+		"description": "py text sepeator"
+	  },
+
+	  "pytorch snnipet": {
+		"prefix": "pynn",
+		"body": [
+		  "import os,sys,time,logging",
+		  "import numpy as np",
+		  "import cv2",
+		  "\nimport torch, torch.nn as nn",
+		  "from tqdm import tqdm"
+		],
+		"description": "pytorch snippet"
+	  },
+	  	  "python main": {
+		"prefix": "pymain",
+		"body": [
+		  "import os,sys,time",
+		  "import numpy as np",
+		  "import matplotlib.pyplot as plt",
+		  "from tqdm import tqdm\n\n",
+          "if __name__==\"__main__\":\n\t${0:#code here}"
+		],
+		"description": "py main snippet"
+	  }
+}
